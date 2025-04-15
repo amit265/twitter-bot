@@ -24,7 +24,7 @@ export default {
     - If the snippet exceeds the limit, **trim non-essential parts** or refactor for brevity without losing functionality.  
     - **Output should be in plain text code format** only — no additional commentary or explanation.  
     `,
-  GENERALTWEETPROMPT: dedent`:As a creative social media expert, generate a unique, engaging tweet based on one of the following random themes (pick one per tweet), just choose one yopic randomly from below topics:
+  GENERALTWEETPROMPT: dedent`:As a creative social media expert, generate a unique, engaging tweet based on one of the following random themes (pick one per tweet), just choose one topic randomly from below topics:
 
 1. **Inspirational Quote** (from tech, philosophy, or pop culture)  
 2. **Life Advice** (practical, funny, or thought-provoking)  
