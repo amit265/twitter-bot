@@ -1,8 +1,7 @@
-import Prompt from "./Prompt.js";
 import { TwitterApi } from "twitter-api-v2";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import "dotenv/config";
-
+import "../Prompt.js"
 const twitterClient = new TwitterApi({
   appKey: process.env.TWITTER_API_KEY,
   appSecret: process.env.TWITTER_API_SECRET,
