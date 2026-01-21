@@ -15,11 +15,12 @@ const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 export default async function handler(req, res) {
   // --- Security Check ---
   // Ensure the request has the correct Secret Key from your GitHub Action
-  const authHeader = req.headers.authorization;
-  if (authHeader !== `Bearer ${process.env.CRON_SECRET}`) {
-    console.error("🚫 Unauthorized attempt to trigger tweet");
-    return res.status(401).json({ error: "Unauthorized" });
-  }
+const authHeader = req.headers.authorization;
+
+// Vercel Cron automatically sends a 'CRON_SECRET' in the env when triggered
+if (authHeader !== `Bearer ${process.env.CRON_SECRET}`) {
+  return res.status(401).json({ error: "Unauthorized" });
+}
 
   if (req.method !== "POST") {
     res.setHeader("Allow", ["POST"]);

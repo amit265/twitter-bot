@@ -1,15 +1,12 @@
 {
-    "builds": [
-      {
-        "src": "index.js",
-        "use": "@vercel/node"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/api/tweet",
-        "dest": "/index.js"
-      }
-    ]
-  }
-  
+  "crons": [
+    {
+      "path": "/api/tweet",
+      "schedule": "0 3 * * *"
+    },
+    {
+      "path": "/api/tweet",
+      "schedule": "0 9 * * *"
+    }
+  ]
+}
