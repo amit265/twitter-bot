@@ -18,6 +18,4 @@ jobs:
 
       - name: Trigger tweet endpoint
         run: |
-          curl -X POST https://twitter-bot-smoky.vercel.app/api/tweet \
-          -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
-          -H "Content-Type: application/json"
+          curl -X POST https://twitter-bot-smoky.vercel.app/api/tweet

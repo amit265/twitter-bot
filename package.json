@@ -2,7 +2,7 @@
   "name": "twitter-bot",
   "version": "1.0.0",
   "main": "index.js",
-    "type": "module",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,9 +13,9 @@
   "dependencies": {
     "@google/generative-ai": "^0.24.0",
     "dedent": "^1.5.3",
-    "dotenv": "^16.4.7",
+    "dotenv": "^16.6.1",
     "node-fetch": "^3.3.2",
     "node-schedule": "^2.1.1",
-    "twitter-api-v2": "^1.22.0"
+    "twitter-api-v2": "^1.29.0"
   }
 }
