@@ -1,4 +1,11 @@
 {
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "https://x.com/coderespite",
+      "permanent": false
+    }
+  ],
   "crons": [
     {
       "path": "/api/tweet",
