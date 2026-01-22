@@ -1,7 +1,7 @@
 {
   "redirects": [
     {
-      "source": "/",
+      "source": "/((?!api/).*)", 
       "destination": "https://x.com/coderespite",
       "permanent": false
     }
